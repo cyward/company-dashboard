@@ -106,7 +106,14 @@ export const Team: React.FC<BaseType> = ({ id }) => {
 
         {/* Vision/Culture Slider */}
         <div className="mt-12 relative bg-blue-50 rounded-xl p-8">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto flex items-center jusify-between">
+            <button
+              onClick={prevSlide}
+              aria-label="Previous Slide"
+              className="p-2 rounded-full text-blue-600"
+            >
+              <FaChevronLeft className="w-5 h-5" />
+            </button>
             <div className="relative overflow-hidden">
               <div
                 className="transition-transform duration-500 ease-in-out"
@@ -157,23 +164,13 @@ export const Team: React.FC<BaseType> = ({ id }) => {
                 </div>
               </div>
             </div>
-
-            <div className="mt-8 flex justify-center space-x-4">
-              <button
-                onClick={prevSlide}
-                aria-label="Previous Slide"
-                className="p-2 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200"
-              >
-                <FaChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                onClick={nextSlide}
-                aria-label="Next Slide"
-                className="p-2 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200"
-              >
-                <FaChevronRight className="w-5 h-5" />
-              </button>
-            </div>
+            <button
+              onClick={nextSlide}
+              aria-label="Next Slide"
+              className="p-2 rounded-full text-blue-600"
+            >
+              <FaChevronRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </div>

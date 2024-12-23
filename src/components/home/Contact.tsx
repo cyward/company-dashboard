@@ -22,7 +22,11 @@ export const Contact: React.FC<BaseType> = ({ id }) => {
         </div>
 
         <div className="mt-20 max-w-lg mx-auto">
-          <form className="space-y-6">
+          <form
+            action="https://formspree.io/f/mwppkjqk"
+            method="POST"
+            className="space-y-6"
+          >
             <div>
               <label
                 htmlFor="name"
