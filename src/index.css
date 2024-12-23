@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "DM Sans";
+  padding: 0;
+  margin: 0;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
