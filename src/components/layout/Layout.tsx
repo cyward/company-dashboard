@@ -26,7 +26,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             </p>
             <p className="flex items-center gap-2">
               <AiOutlinePhone />
-              <span>+1 (339) 309-3123</span>
+              <span>+1 (209) 286-7543</span>
             </p>
           </div>
           <div className="flex justify-center space-x-4">
