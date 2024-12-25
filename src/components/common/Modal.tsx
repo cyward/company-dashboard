@@ -3,6 +3,7 @@ interface ModalProps {
   onClose: () => void;
   title: string;
   children: React.ReactNode;
+  className?: string;
 }
 
 export const Modal: React.FC<ModalProps> = ({
@@ -10,20 +11,23 @@ export const Modal: React.FC<ModalProps> = ({
   onClose,
   title,
   children,
+  className = ''
 }) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div
-        className="fixed inset-0 bg-black opacity-50"
+        className="fixed inset-0 bg-black/50 transition-opacity duration-300"
         onClick={onClose}
       ></div>
-      <div className="bg-white rounded-lg overflow-hidden shadow-lg z-10 w-11/12 md:w-2/5">
+      <div 
+        className={`relative bg-white rounded-lg overflow-hidden shadow-xl w-11/12 md:w-2/5 ${className}`}
+      >
         <div className="p-4 border-b">
           <h2 className="text-lg font-semibold">{title}</h2>
         </div>
-        <div className="">{children}</div>
+        <div>{children}</div>
       </div>
     </div>
   );

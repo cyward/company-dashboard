@@ -6,23 +6,20 @@ export const Services: React.FC<BaseType> = ({ id }) => {
     {
       title: "IT Strategy Consulting",
       description:
-        "Expert guidance to align your IT strategy with business goals.",
-      image:
-        "https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/1135346386BusinessApplicationsManager.jpg=ws1280x960",
+        "Expert guidance to align your IT infrastructure with your business goals and market demands. Our consultants analyze your current systems, identify gaps, and create comprehensive roadmaps for digital transformation. We help you optimize costs, improve operational efficiency, and stay ahead of technological trends while ensuring long-term scalability.",
+      image: "/src/assets/software.png",
     },
     {
       title: "Cloud Solutions",
       description:
-        "Seamless migration and management of cloud services tailored to your needs.",
-      image:
-        "https://preciseinfotech.com/wp-content/uploads/2024/05/service-5.jpg",
+        "Seamless migration and management of cloud services customized to meet your specific business requirements. We provide end-to-end cloud solutions including architecture design, deployment, and 24/7 monitoring to ensure optimal performance and security. Our expertise spans across major cloud platforms, helping you leverage the full potential of cloud computing while reducing operational costs.",
+      image: "/src/assets/cloud.png",
     },
     {
-      title: "Cybersecurity Services",
+      title: "Blockchain Development",
       description:
-        "Comprehensive security assessments and solutions to protect your data.",
-      image:
-        "https://senlainc.com/wp-content/webp-express/webp-images/uploads/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-2560%D1%851600.jpg.webp",
+        "Rapid development of decentralized applications and smart contracts using cutting-edge blockchain technologies. Our team specializes in creating secure, scalable, and efficient blockchain solutions for various industries including finance, supply chain, and healthcare. We provide comprehensive support from concept development to deployment, ensuring your blockchain implementation delivers real business value.",
+      image: "/src/assets/blockchain.png",
     },
   ];
   const { isVisible, sectionRef } = useScroll();
@@ -54,11 +51,12 @@ export const Services: React.FC<BaseType> = ({ id }) => {
               }`}
             >
               <div className="flex-1">
-                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden bg-gray-200">
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden bg-transparent max-w-lg mx-auto">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="object-cover"
+                    className="object-contain w-full h-full max-h-[300px]"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -69,7 +67,15 @@ export const Services: React.FC<BaseType> = ({ id }) => {
                 <p className="mt-4 text-lg text-gray-600">
                   {service.description}
                 </p>
-                <button className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                <button 
+                  className="mt-6 inline-flex items-center px-6 py-3 
+                  border border-transparent text-base font-medium rounded-md 
+                  text-white bg-[rgb(17,26,37)]
+                  transition-all duration-300 ease-in-out
+                  hover:bg-[rgb(25,35,48)] hover:shadow-lg
+                  active:opacity-80
+                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
                   Learn More
                 </button>
               </div>

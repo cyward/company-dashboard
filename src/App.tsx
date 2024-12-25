@@ -3,15 +3,18 @@ import { Layout } from "./components/layout/Layout";
 import { Home } from "./pages/Home";
 import { Career } from "./pages/Career";
 import { PATH } from "./const";
+import { PageTransition } from "./components/common/PageTransition";
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Routes>
-          <Route path={PATH.HOME} element={<Home />} />
-          <Route path={PATH.CAREER} element={<Career />} />
-        </Routes>
+        <PageTransition>
+          <Routes>
+            <Route path={PATH.HOME} element={<Home />} />
+            <Route path={PATH.CAREER} element={<Career />} />
+          </Routes>
+        </PageTransition>
       </Layout>
     </BrowserRouter>
   );

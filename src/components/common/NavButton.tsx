@@ -7,7 +7,7 @@ export const NavButton: React.FC<NavButtonProps> = ({ onClick, children }) => {
     <div className="group">
       <button
         onClick={onClick}
-        className="text-gray-700 hover:text-blue-600 transition-all h-[60px]"
+        className="text-white hover:text-blue-600 transition-all h-[60px]"
       >
         {children}
       </button>

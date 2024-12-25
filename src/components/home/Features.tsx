@@ -2,32 +2,32 @@ import { useScroll } from "../../hooks";
 import {
   FaLaptopCode,
   FaCloud,
-  FaShieldAlt,
+  FaEthereum,
   FaChartLine,
 } from "react-icons/fa";
 
 export const Features: React.FC = () => {
   const features = [
     {
-      icon: <FaLaptopCode className="h-12 w-12 text-blue-500" />,
+      icon: <FaLaptopCode className="h-12 w-12 text-black-500" />,
       title: "Custom Software Development",
       description:
         "Tailored software solutions to meet your unique business needs.",
     },
     {
-      icon: <FaCloud className="h-12 w-12 text-blue-500" />,
+      icon: <FaCloud className="h-12 w-12 text-black-500" />,
       title: "Cloud Consulting",
       description:
         "Expert guidance on cloud strategy, migration, and management.",
     },
     {
-      icon: <FaShieldAlt className="h-12 w-12 text-blue-500" />,
-      title: "Cybersecurity Solutions",
+      icon: <FaEthereum className="h-12 w-12 text-balck-500" />,
+      title: "Web3 Development",
       description:
-        "Protect your business with our comprehensive security services.",
+        "Building decentralized applications and smart contracts.",
     },
     {
-      icon: <FaChartLine className="h-12 w-12 text-blue-500" />,
+      icon: <FaChartLine className="h-12 w-12 text-black-500" />,
       title: "Data Analytics",
       description:
         "Transform data into actionable insights for better decision-making.",

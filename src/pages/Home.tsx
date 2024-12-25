@@ -6,12 +6,12 @@ import { Contact } from '../components/home/Contact';
 
 export const Home: React.FC = () => {
   return (
-    <div className="pt-16">
+    <main className="relative min-h-screen overflow-x-hidden">
       <Hero id="home" />
       <Features />
       <Services id="services" />
       <Team id='team' />
       <Contact id="contact" />
-    </div>
+    </main>
   );
 };
