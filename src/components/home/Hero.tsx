@@ -13,7 +13,7 @@ export const Hero: React.FC<BaseType> = ({id}) => {
             <span className="block">Empowering Your Business</span>
             <span className="block text-blue-200">With Innovative IT Solutions</span>
           </h1>
-          <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+          <p className="mt-3 max-w-md mx-auto text-base text-yellow-900 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Transform your operations with our cutting-edge technology and expert consulting services.
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8 gap-4">
@@ -21,7 +21,7 @@ export const Hero: React.FC<BaseType> = ({id}) => {
               href="#contact"
               className="w-full sm:w-44 flex items-center justify-center px-8 py-3 
               border border-white text-base font-medium rounded-md 
-              text-white bg-transparent
+              text-blue-200 bg-transparent
               transition-all duration-300 ease-in-out
               hover:bg-white/10 hover:shadow-lg
               active:opacity-80
@@ -38,7 +38,7 @@ export const Hero: React.FC<BaseType> = ({id}) => {
               }}
               className="w-full sm:w-44 flex items-center justify-center px-8 py-3 
               border border-white text-base font-medium rounded-md 
-              text-white bg-transparent
+              text-blue-200 bg-transparent
               transition-all duration-300 ease-in-out
               hover:bg-white/10 hover:shadow-lg
               active:opacity-80
