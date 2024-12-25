@@ -172,7 +172,7 @@ export const Career: React.FC = () => {
     <section 
       className="py-20 max-h-[calc(100vh-64px)] min-h-[calc(100vh-88px)] relative"
       style={{ 
-        backgroundImage: "url('/src/assets/background4.jpg')",
+        backgroundImage: "url('/assets/background4.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

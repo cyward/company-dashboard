@@ -4,7 +4,7 @@ export const Hero: React.FC<BaseType> = ({id}) => {
   return (
     <div 
       className="relative h-screen flex items-center bg-cover bg-center bg-no-repeat" 
-      style={{ backgroundImage: "url('/src/assets/background.jpg')" }}
+      style={{ backgroundImage: "url('/assets/background.jpg')" }}
       id={id}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

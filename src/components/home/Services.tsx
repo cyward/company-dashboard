@@ -7,19 +7,19 @@ export const Services: React.FC<BaseType> = ({ id }) => {
       title: "IT Strategy Consulting",
       description:
         "Expert guidance to align your IT infrastructure with your business goals and market demands. Our consultants analyze your current systems, identify gaps, and create comprehensive roadmaps for digital transformation. We help you optimize costs, improve operational efficiency, and stay ahead of technological trends while ensuring long-term scalability.",
-      image: "/src/assets/software.png",
+      image: "/assets/software.png",
     },
     {
       title: "Cloud Solutions",
       description:
         "Seamless migration and management of cloud services customized to meet your specific business requirements. We provide end-to-end cloud solutions including architecture design, deployment, and 24/7 monitoring to ensure optimal performance and security. Our expertise spans across major cloud platforms, helping you leverage the full potential of cloud computing while reducing operational costs.",
-      image: "/src/assets/cloud.png",
+      image: "/assets/cloud.png",
     },
     {
       title: "Blockchain Development",
       description:
         "Rapid development of decentralized applications and smart contracts using cutting-edge blockchain technologies. Our team specializes in creating secure, scalable, and efficient blockchain solutions for various industries including finance, supply chain, and healthcare. We provide comprehensive support from concept development to deployment, ensuring your blockchain implementation delivers real business value.",
-      image: "/src/assets/blockchain.png",
+      image: "/assets/blockchain.png",
     },
   ];
   const { isVisible, sectionRef } = useScroll();
