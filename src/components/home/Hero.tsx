@@ -21,7 +21,7 @@ export const Hero: React.FC<BaseType> = ({id}) => {
               href="#contact"
               className="w-full sm:w-44 flex items-center justify-center px-8 py-3 
               border border-white text-base font-medium rounded-md 
-              text-blue-200 bg-transparent
+              text-blue-300 bg-transparent
               transition-all duration-300 ease-in-out
               hover:bg-white/10 hover:shadow-lg
               active:opacity-80
@@ -38,7 +38,7 @@ export const Hero: React.FC<BaseType> = ({id}) => {
               }}
               className="w-full sm:w-44 flex items-center justify-center px-8 py-3 
               border border-white text-base font-medium rounded-md 
-              text-blue-200 bg-transparent
+              text-blue-300 bg-transparent
               transition-all duration-300 ease-in-out
               hover:bg-white/10 hover:shadow-lg
               active:opacity-80
