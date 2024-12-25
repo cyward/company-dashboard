@@ -180,7 +180,7 @@ export const Career: React.FC = () => {
     >
       <div className="absolute inset-0 bg-gray-900/50" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 relative z-10">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center">
+        <h2 className="text-3xl font-extrabold text-center text-white">
           Career Opportunities
         </h2>
         <div className="mt-10">
