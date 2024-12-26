@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { Navbar } from "../common/Navbar";
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 interface LayoutProps {
