@@ -29,7 +29,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <span>+1 (209) 286-7543</span>
             </p>
           </div>
-          <div className="flex justify-center space-x-4">
+          {/* <div className="flex justify-center space-x-4">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -54,7 +54,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             >
               <FaLinkedin className="text-white hover:text-gray-400" />
             </a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>

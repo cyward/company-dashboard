@@ -67,9 +67,9 @@ export const Navbar: React.FC = () => {
                 <NavButton onClick={() => scrollToSection("services")}>
                   Services
                 </NavButton>
-                <NavButton onClick={() => scrollToSection("team")}>
+                {/* <NavButton onClick={() => scrollToSection("team")}>
                   Team
-                </NavButton>
+                </NavButton> */}
                 <NavButton onClick={() => scrollToSection("contact")}>
                   Contact
                 </NavButton>
