@@ -9,7 +9,7 @@ type TPos = {
 export const Career: React.FC = () => {
   const positions: TPos[] = [
     {
-      title: "Web3 Frontend Engineer",
+      title: "Full Stack Blockchain Developer",
       description: (
         <div className="p-6 flex flex-col gap-2">
           <div className="">
@@ -24,62 +24,65 @@ export const Career: React.FC = () => {
             <h2 className="text-lg font-bold">Key Responsibilities</h2>
             <ul>
               <li>
-                - Develop and maintain user-friendly web applications using
-                React and TypeScript.
+                - Design and implement user interfaces and server-side logic
+                that interact with the backend systems.
               </li>
               <li>
-                - Collaborate with cross-functional teams to define, design, and
-                ship new features.
+                - Collaborate with backend developers to integrate front-end and
+                back-end systems, ensuring smooth data flow and functionality.
               </li>
               <li>
-                - Implement responsive designs and ensure the technical
-                feasibility of UI/UX designs.
+                - Optimize web applications for performance and scalability,
+                leveraging your expertise in modern JavaScript frameworks and
+                tools.
               </li>
-              <li>- Integrate with blockchain technologies and Web3 APIs.</li>
               <li>
                 - Optimize applications for maximum speed and scalability.
               </li>
               <li>
-                - Conduct code reviews and provide constructive feedback to team
-                members.
-              </li>
-              <li>
-                - Stay updated with emerging technologies and industry trends.
+                - Write comprehensive tests and documentation for both
+                client-side and server-side code, ensuring maintainability and
+                reliability.
               </li>
             </ul>
           </div>
           <div className="">
             <h2 className="text-lg font-bold">Required Qualifications</h2>
             <ul>
+              <li>- 5 years of professional software development experience</li>
+              <li>- 2 years of experience in the EVM ecosystem</li>
               <li>
-                - Proven experience as a Frontend Developer or similar role.
-              </li>
-              <li>- Strong proficiency in React and TypeScript.</li>
-              <li>
-                - Experience with Web3 technologies and blockchain development.
-              </li>
-              <li>
-                - Familiarity with RESTful APIs and modern frontend build
-                pipelines and tools.
+                - 1-2 years of professional Rust experience and solidity
+                experience
               </li>
               <li>
-                - Understanding of responsive design principles and best
-                practices.
+                - 3-4 years of professional TypeScript experience and Typescript
+                libraries (Reactjs, Nextjs, Nodejs, Express.js)
               </li>
               <li>
-                - Excellent problem-solving skills and attention to detail.
+                - 3-4 years of professional experiences about the SQL database
+                (MySQL, PostgreSQL)
               </li>
-              <li>- Strong communication and collaboration skills.</li>
             </ul>
           </div>
           <div className="">
-            <h2 className="text-lg font-bold">Preferred Qualifications</h2>
+            <h2 className="text-lg font-bold">Benifits</h2>
             <ul>
               <li>
-                - Experience with state management libraries (e.g., Redux,
-                MobX).
+                -Competitive salary range of $75,000 to $85,000 USD annually,
+                depending on experience and qualifications.
               </li>
-              <li>- Knowledge of testing frameworks (e.g., Jest, Cypress).</li>
+              -Comprehensive benefits program, including health insurance,
+              retirement plans, and paid time off.
+              <li>
+                -Flexible and remote work environment, allowing you to maintain
+                a healthy work-life balance.
+              </li>
+              <li>
+                -Opportunity to work at the intersection of blockchain and
+                cutting-edge technologies, shaping the future of decentralized
+                applications.
+              </li>
             </ul>
           </div>
         </div>
@@ -169,13 +172,13 @@ export const Career: React.FC = () => {
     setModalOpen(!isModalOpen);
   };
   return (
-    <section 
+    <section
       className="py-20 max-h-[calc(100vh-64px)] min-h-[calc(100vh-88px)] relative"
-      style={{ 
+      style={{
         backgroundImage: "url('/assets/background4.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="absolute inset-0 bg-gray-900/50" />
@@ -201,7 +204,8 @@ export const Career: React.FC = () => {
                   hover:before:opacity-100"
               >
                 <div className="flex items-center space-x-4">
-                  <div className="h-10 w-10 flex-shrink-0 rounded-full bg-blue-100 
+                  <div
+                    className="h-10 w-10 flex-shrink-0 rounded-full bg-blue-100 
                     flex items-center justify-center group-hover:bg-blue-200 
                     transition-colors duration-300"
                   >
@@ -220,8 +224,12 @@ export const Career: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium text-lg text-gray-900">{position.title}</span>
-                    <p className="text-sm text-gray-500 mt-1">Block Black Hole • Remote</p>
+                    <span className="font-medium text-lg text-gray-900">
+                      {position.title}
+                    </span>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Block Black Hole • Remote
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -246,9 +254,9 @@ export const Career: React.FC = () => {
           ))}
         </div>
       </div>
-      <Modal 
-        isOpen={isModalOpen} 
-        onClose={toggleModal} 
+      <Modal
+        isOpen={isModalOpen}
+        onClose={toggleModal}
         title={position.title}
         className="animate-modal-appear mt-[100px]"
       >

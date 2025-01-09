@@ -22,7 +22,7 @@ export const Modal: React.FC<ModalProps> = ({
         onClick={onClose}
       ></div>
       <div 
-        className={`relative bg-white rounded-lg overflow-hidden shadow-xl w-11/12 md:w-2/5 ${className}`}
+        className={`relative bg-white rounded-lg overflow-hidden shadow-xl lg:w-6/12 md:w-2/5 ${className}`}
       >
         <div className="p-4 border-b">
           <h2 className="text-lg font-semibold">{title}</h2>
