@@ -28,32 +28,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <span>+1 (209) 286-7543</span>
             </p>
           </div>
-          {/* <div className="flex justify-center space-x-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition duration-300 transform hover:scale-110"
-            >
-              <FaFacebook className="text-white hover:text-gray-400" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition duration-300 transform hover:scale-110"
-            >
-              <FaTwitter className="text-white hover:text-gray-400" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition duration-300 transform hover:scale-110"
-            >
-              <FaLinkedin className="text-white hover:text-gray-400" />
-            </a>
-          </div> */}
         </div>
       </footer>
     </div>

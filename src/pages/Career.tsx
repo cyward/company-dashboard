@@ -173,7 +173,7 @@ export const Career: React.FC = () => {
   };
   return (
     <section
-      className="py-20 max-h-[calc(100vh-64px)] min-h-[calc(100vh-88px)] relative"
+      className="py-20 max-h-[calc(100vh-112px)] min-h-[calc(100vh-112px)] relative"
       style={{
         backgroundImage: "url('/assets/background4.jpg')",
         backgroundSize: "cover",
