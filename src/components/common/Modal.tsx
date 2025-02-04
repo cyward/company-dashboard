@@ -11,7 +11,7 @@ export const Modal: React.FC<ModalProps> = ({
   onClose,
   title,
   children,
-  className = ''
+  className = "",
 }) => {
   if (!isOpen) return null;
 
@@ -20,8 +20,8 @@ export const Modal: React.FC<ModalProps> = ({
       <div
         className="fixed inset-0 bg-black/50 transition-opacity duration-300"
         onClick={onClose}
-      ></div>
-      <div 
+      />
+      <div
         className={`relative bg-white rounded-lg overflow-hidden shadow-xl lg:w-6/12 md:w-2/5 ${className}`}
       >
         <div className="p-4 border-b">
